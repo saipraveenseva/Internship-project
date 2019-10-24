@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello"> Mobile Account Management App</string>
+    <string name="app_name">MobileAccount</string>
+    <string name="report">Report Generation</string>
+    <string name="addNewExpenseType">Add New Expense Type</string>
+    <string name="changePwd">Change Password</string>
+    <string name="expType">Expense Type</string>
+    <string name="des">Description</string>
+    <string name="store">Store</string>
+    <string name="home">Go Home</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="view">View</string>
+    <string name="login">login</string>
+</resources>

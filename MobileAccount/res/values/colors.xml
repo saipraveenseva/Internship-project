@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="mycolor">#ff0</color>
+    <color name="cyan">#f1f</color>
+    <color name="indigo">#ff4</color>
+    <color name="front">#5f6</color>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This page is for generating report total expense as well as category wise -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/keypad1"
+            android:gravity="center"
+            android:hint="From Date"
+            android:onClick="fromDay" />
+
+        <TextView
+            android:id="@+id/textFrom"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fed" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:hint="To Date"
+            android:onClick="toDate" android:background="@drawable/keypad1"/>
+
+        <TextView
+            android:id="@+id/textTo"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fef" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/keypad1"
+        android:onClick="generateItemReport"
+        android:text="Generate Report"
+        android:textColor="#ff00ff00" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/totalText"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Total Expense  "
+            android:textColor="#ffffff"
+            android:textSize="3mm" 
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="3mm" 
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ReportCat"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="2mm"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ReportAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expense"
+            android:textSize="2mm"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/reportList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
